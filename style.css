@@ -1,0 +1,269 @@
+/* Styling Navber */
+
+body{
+    overflow-x: hidden !important;
+}
+
+#navBar{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    max-width: 100% !important;
+
+}
+
+.searchBar{
+    display: flex;
+    gap: 40px;
+    align-items:self-start;
+    padding-top: 0px;
+    padding-left: 20px;
+
+    .searching{
+        border: 1px solid rgb(217,217,217);
+        padding: 8px;
+        align-items: center;
+        display: flex;
+        border-radius: 50px;
+        padding-right: 21px !important;
+        margin-top: -2px;
+        i{
+            color: rgb(217,217,217);
+            font-size: 20px;
+        }
+    }
+    .fa-microphone{
+        font-size: 20px;
+        border: 1px solid rgb(217,217,217);
+        border-radius: 50%;
+        padding: 10px;
+        color: white;
+        background-color: rgb(217,217,217);
+    }
+    
+    input{
+        margin-top: 0%;
+        border: none;
+        border-right: 1px solid rgb(217,217,217);
+        width: 50vw;
+        padding: 8px;
+        margin-right: 20px;
+    }
+    input:focus{
+        outline: none;
+    }
+}
+
+#signInNav{
+    display: flex;
+    gap: 40px;
+    i{
+        margin-top: 18px;
+
+    }
+    .user{
+        border: 1px solid rgb(217,217,217);
+        padding: 0px 20px;
+        border-radius: 50px;
+        gap: 10px;
+        i{
+            color: rgba(146, 139, 139, 0.774);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    gap: 5%;
+
+}
+
+#sideBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 100vh;
+    height: 80vh;
+    align-items: center;
+    padding-top: 40px;
+    position: -webkit-sticky; 
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    max-width: 100% !important;
+
+    i{
+        color: rgb(146, 140, 140);
+        font-size: 30px;
+
+    }
+    div{
+        text-align: center;
+        p{
+            font-size: 13px;
+        }
+    }
+}
+
+body{
+    overflow-y: hidden;
+}
+
+
+
+/* initial */
+.hideIt{
+    display: block;
+    padding: 30px 0px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 1px 2px 8px #cccc;
+}
+
+
+
+
+
+
+/* styling search page */
+#videosContainer{
+    margin-top: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 80vh;
+    display: block;
+}
+
+
+.imageDiv{
+    min-width: 45%;
+    border-radius: 50px;
+    
+    img{
+        border-radius: 50px;
+    }
+}
+
+.logoDiv{
+    margin-top: 12px;
+    margin-right: 15px;
+    width: 5%;
+    height: 10%;
+    border-radius: 50%;
+
+    img{
+        border-radius: 50%;
+    }
+}
+
+.videoDiv{
+    margin: 30px;
+    display: flex;
+}
+
+.videoDiv:hover{
+    box-shadow: 1px 2px 8px #cccc;
+}
+
+.right-div{
+    margin: 20px;
+}
+
+
+.publishTime{
+    color: #858181cc;
+    font-weight: 50px;
+    font-size: small;
+}
+
+.videoTitle{
+    /* color: #858181cc; */
+    font-weight: 50px;
+    font-size: 25px;
+}
+
+.channelTitle{
+    color: #413f3fcc;
+}
+
+.description{
+    font-size: smaller;
+}
+
+
+
+
+
+
+
+/* video playing part */
+#playingVideoPart{
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    gap: 80px;
+}
+
+
+.videoTitle-recom{
+    font-size: 20px;
+}
+
+.imageDiv-recom{
+    max-width: 30% !important;
+    
+}
+
+.videoDiv-recom{
+    /* margin: -11px !important; */
+    display: flex;
+    gap: 20px;
+}
+
+.logoDiv-recom{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    img{
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+
+}
+
+.commentCard{
+    margin-top: 30px;
+    box-shadow: 1px 2px 8px #cccc;
+    padding: 20px;
+}
+
+
+.userProfileImg{
+    border-radius: 50%;
+    width: 3%;
+    height: 3%;
+
+}
+.commentDiv{
+    margin-top: 100px;
+}
