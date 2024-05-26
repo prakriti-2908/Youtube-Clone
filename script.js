@@ -348,8 +348,7 @@ leftPart.append(titleIFrame);
 
 let CommentTitle = document.createElement("h2");
 CommentTitle.innerHTML = "Comments : ";
-CommentTitle.style.marginTop = "30px";
-CommentTitle.style.marginBottom = "10px";
+CommentTitle.style.marginTop = "80px";
 leftPart.append(CommentTitle);
 
 
@@ -381,8 +380,8 @@ getComments(videoId)
             let userProfileImg = document.createElement("img");
             userProfileImg.className = "userProfileImg"
             userProfileImg.setAttribute("src", comment.snippet.topLevelComment.snippet.authorProfileImageUrl);
-            userDiv.append(userName);
             userDiv.append(userProfileImg);
+            userDiv.append(userName);
             userDiv.append(userComment);
 
             commentDiv.append(userDiv);
