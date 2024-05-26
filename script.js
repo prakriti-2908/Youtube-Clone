@@ -374,9 +374,10 @@ getComments(videoId)
             let userName = document.createElement("h4");
             userName.innerHTML = comment.snippet.topLevelComment.snippet.authorDisplayName;
             userName.style.fontWeight = "20px"
+            userName.style.display = "inline";
+            userName.style.marginLeft = "10px";
             let userComment = document.createElement("p");
             userComment.innerHTML = comment.snippet.topLevelComment.snippet.textOriginal;
-            userComment.style.display = "inline";
             let userProfileImg = document.createElement("img");
             userProfileImg.className = "userProfileImg"
             userProfileImg.setAttribute("src", comment.snippet.topLevelComment.snippet.authorProfileImageUrl);
