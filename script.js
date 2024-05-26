@@ -421,7 +421,7 @@ getComments(videoId)
         thumbnailImg.setAttribute("height", "100%");
         thumbnailImg.style.display = "block";
         thumbnailImg.style.objectFit = "contain";
-        imgDiv.addEventListener("click", () => { displayVideosOnPlayPart(item.id.videoId, item.snippet.channelId, data, channelTitle,logoIDD) });
+        imgDiv.addEventListener("click", () => { displayVideosOnPlayPart(item.id.videoId, item.snippet.channelId, data, channelTitle,logoIDD,title) });
         imgDiv.append(thumbnailImg);
         videoDiv.append(imgDiv);
 
