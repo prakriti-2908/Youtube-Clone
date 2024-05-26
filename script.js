@@ -308,7 +308,9 @@ function displayVideosOnPlayPart(videoId, channelId, data, channelTitle,logoID,t
     videosContainer.append(onClickingVideo);
     // let nameChannel = data.items.
 
-    // Ensure YouTube IFrame API is loaded
+    
+
+    
 if (window.YT) {
     new YT.Player("video-player", {
         height: "400",
@@ -344,7 +346,11 @@ titleIFrame.style.top = "-13px";
 leftPart.append(titleIFrame);
 
 
-
+let CommentTitle = document.createElement("h2");
+CommentTitle.innerHTML = "Comments : ";
+CommentTitle.style.marginTop = "30px";
+CommentTitle.style.marginBottom = "10px";
+leftPart.append(CommentTitle);
 
 
 
